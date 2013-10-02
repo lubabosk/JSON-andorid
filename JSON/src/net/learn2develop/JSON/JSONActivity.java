@@ -32,7 +32,8 @@ public class JSONActivity extends Activity  {
 	Apache HTTP Client. Both support HTTPS, streaming uploads and downloads,
 	 configurable timeouts, IPv6 and connection pooling.*/
 	
-	
+	///here is the new change
+	//the second changes I made 
 	public String readJSONFeed(String URL)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
