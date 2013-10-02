@@ -24,16 +24,7 @@ import android.widget.Toast;
 public class JSONActivity extends Activity  {
 
 	
-	// it will connect to the specified URL and then read the response from the web server , it return  string as result 
-
 	
-	
-	/*Android includes two HTTP clients: HttpURLConnection and 
-	Apache HTTP Client. Both support HTTPS, streaming uploads and downloads,
-	 configurable timeouts, IPv6 and connection pooling.*/
-	
-	///here is the new change
-	//the second changes I made 
 	public String readJSONFeed(String URL)
 	{
 		StringBuilder stringBuilder = new StringBuilder();
@@ -118,11 +109,8 @@ public class JSONActivity extends Activity  {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		// first try this , 
-		//new ReadJSONFeedTask().execute("http://extjs.org.cn/extjs/examples/grid/survey.html");
-		new ReadJSONFeedTask().execute("http://shane.pre.yidio.com/movies/all/0/30?sort=popular&source=65,2,129,214,46,10,42,28,64,45,19,12,1,120,15,132&rating=30&mpaa_rating=g,pg,pg-13,r&hide_watched=0&favorites=0&api_key=49a3jF8zkE3");
 		
-		/*//second try this, to fetch the latest tweets from Twitter 
-		new ReadJSONFeedTask().execute("https://twitter.com/statuses/user_timeline/weimenglee.json");*/
-	}
+	
+		new ReadJSONFeedTask().execute("you link");
+}
 }
